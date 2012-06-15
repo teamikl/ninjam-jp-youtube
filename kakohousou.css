@@ -1,0 +1,43 @@
+
+aside#pager-aside {
+  padding: 2px;
+  margin: 0px;
+  border: none;
+  height: 30px;
+  background-color: #ffffff;
+  border: solid 1px #aaaaff;
+}
+
+ul#pager {
+  padding: 0;
+  margin: 5px;
+}
+
+ul#pager li {
+  padding: 3px 4px;
+  margin-right: 2px;
+  list-style: none;
+  font-size: 14px;
+  float: left;
+  border: solid 1px blue;
+  cursor: pointer;
+}
+
+aside#video-list-aside {
+  border: solid 1px #aaaaff;
+}
+
+ul#video-list {
+  padding: 5px;
+  margin: 0;
+}
+
+ul#video-list li {
+  font-size: 14px;
+  font-family: monospace;
+  margin: 3px;
+  padding: 2px;
+  list-style: none;
+  background-color: #eeeeff;
+}
+
