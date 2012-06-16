@@ -1,0 +1,112 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Ninjam-jp-youtube</title>
+  <meta name="description" content="crasher.orz.hm で演奏された過去放送の一覧表示">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Ninjam-jp-youtube</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">crasher.orz.hm で演奏された過去放送の一覧表示</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/teamikl/ninjam-jp-youtube/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/teamikl/ninjam-jp-youtube/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/teamikl/ninjam-jp-youtube" class="code">View Ninjam-jp-youtube on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>ninjam-jp-youtube</h1>
+
+<p>crasher.orz.hm で演奏されたNINJAMセッション過去放送の一覧表示</p>
+
+<h2>概要</h2>
+
+<p>開発言語: HTML, JavaScript, CSS</p>
+
+<p>方針: 出来る限り HTML ファイル一個配置するだけで動作するようにする。</p>
+
+<p>ライブラリは google ajax library api 経由で利用。</p>
+
+<p>その他の3rd-party製プラグインは、必要ならassetsディレクトリを設ける。
+ライセンス確認の上、GitHub　Pagesから直接読み込み。</p>
+
+<h2>NINJAM ネットセッション 過去放送へのクエリ</h2>
+
+<p>JSONPを利用。HTMLのsctipt要素を使ってクエリを発行します。
+ページ送りで動的にクエリを発行する場合は、DOMのcreateElementで。</p>
+
+<p>URL:
+ <a href="http://gdata.youtube.com/feeds/api/videos/-/NINJAM">http://gdata.youtube.com/feeds/api/videos/-/NINJAM</a></p>
+
+<p>QUERY_STRING:
+ v=2&amp;alt=jsonc&amp;format=5&amp;orderby=published&amp;author=nakajimayuusuke&amp;max-results=10&amp;callback=showResults</p>
+
+<h3>関連リンク</h3>
+
+<p>Developer's Guide: JSON-C / JavaScript
+<a href="https://developers.google.com/youtube/2.0/developers_guide_jsonc">https://developers.google.com/youtube/2.0/developers_guide_jsonc</a></p>
+
+<p>YouTube Player のパラメータ
+<a href="https://developers.google.com/youtube/player_parameters">https://developers.google.com/youtube/player_parameters</a></p>
+
+<h2>TODO</h2>
+
+<ul>
+<li>固定幅フォント利用 (日付が一桁の時のスペース幅を揃える為)</li>
+<li>ページ送り (jQueryUI の Pagination系 プラグインで)</li>
+<li>ページ送りの UI 改善 (ページ番号を列挙)</li>
+<li>サムネイル画像の表示 (JSONCに画像のurlが含まれている。item.thumbnail.default)</li>
+<li>コメント表示 (PHP等でGData API 利用すれば可能だけど、JSONP では未サポート)</li>
+<li>他のブラウザでの動作確認 (現在、chrome でのマニュアル・テストのみ) -&gt; 自動化 selenium</li>
+<li>スクリプトoff/未対応クライアントへの表示</li>
+<li>ヘージに埋め込んでるスクリプトも外部リソースへ。ファイルサイズはJSMin等で最適化。</li>
+<li>Cache/manifest利用</li>
+<li>callbackのエラー処理</li>
+<li>TODO リストを issue tracker へ登録</li>
+<li>動画の組み込み。 -&gt;  プレイヤーの機能が異なる。</li>
+<li>デザインを動画プレイヤーとの統合</li>
+<li>動画プレイヤーの横幅</li>
+<li>動画リストのsmooth scroll</li>
+</ul>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/teamikl" class="avatar"><img src="https://secure.gravatar.com/avatar/801a2fb8df8dd2bb3ea31a5223ad6360?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="48" height="48"/></a> <a href="https://github.com/teamikl">teamikl</a> maintains <a href="https://github.com/teamikl/ninjam-jp-youtube">Ninjam-jp-youtube</a></p>
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/teamikl/ninjam-jp-youtube/tarball/master" class="tar">tar</a><a href="https://github.com/teamikl/ninjam-jp-youtube/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
